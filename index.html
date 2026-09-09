@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="theme-color" content="#f2f0eb">
+<title>بوابة المسابقات | تعليمية ظفار</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f0eb;--paper:#fbfaf7;--ink:#343533;--muted:#72736f;--line:#ddd9d1;--teal:#15958e;--teal2:#0d756f;--orange:#b96a1b;--olive:#aeb778;--beige:#d7cab8;--shadow:0 18px 55px rgba(50,47,42,.08);--shadow2:0 8px 24px rgba(50,47,42,.06)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tajawal,sans-serif;color:var(--ink);background:radial-gradient(circle at 92% 0,rgba(21,149,142,.07),transparent 24%),radial-gradient(circle at 8% 12%,rgba(185,106,27,.06),transparent 24%),var(--bg)}.container{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(242,240,235,.9);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:11px;font-weight:800}.mark{width:43px;height:43px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#e7ddd0,#c7b59d);box-shadow:var(--shadow2);position:relative}.mark:after{content:"";width:9px;height:9px;border-radius:99px;background:var(--teal);position:absolute;left:8px;bottom:8px}nav{display:flex;gap:4px}nav a{text-decoration:none;color:var(--muted);padding:8px 10px;border-radius:9px;font-size:14px}nav a:hover{background:#fff8;color:var(--ink)}
+.hero{padding:66px 0 38px}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:28px;align-items:center}.badge{display:inline-flex;align-items:center;gap:8px;background:#edf1ed;border:1px solid #d8e2dc;padding:8px 14px;border-radius:99px;font-size:14px;color:#586761}.badge:before{content:"";width:7px;height:7px;border-radius:99px;background:var(--teal)}h1{font-size:clamp(39px,6vw,66px);line-height:1.14;margin:18px 0 14px}h1 span{color:var(--teal2)}.hero p{font-size:18px;line-height:1.95;color:var(--muted);margin:0;max-width:760px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;text-decoration:none;border:0;border-radius:14px;padding:13px 18px;font-family:inherit;font-weight:700;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--teal);color:white;box-shadow:0 8px 22px rgba(21,149,142,.18)}.soft{background:#ece8e1;border:1px solid #ddd6cc;color:#514d47}
+.hero-card{background:linear-gradient(160deg,#fffdf9,#f7f5f0);border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:var(--shadow)}.hero-card small{color:var(--muted)}.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:16px}.time{background:#f2efe9;border:1px solid var(--line);border-radius:17px;padding:17px 8px;text-align:center}.num{display:block;font-size:29px;font-weight:800}.lab{font-size:12px;color:var(--muted)}.deadline{margin-top:14px;font-weight:700}
+.section{padding:44px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:20px}.section h2{font-size:30px;margin:0}.section-head p{max-width:660px;margin:0;color:var(--muted);line-height:1.8}.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.quick{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:17px;box-shadow:var(--shadow2);position:relative;overflow:hidden}.quick:before{content:"";position:absolute;top:0;right:0;width:100%;height:4px;background:var(--teal)}.quick:nth-child(2):before{background:var(--orange)}.quick:nth-child(3):before{background:var(--olive)}.quick .ico{font-size:22px}.quick strong{display:block;margin:10px 0 5px}.quick span{font-size:13px;color:var(--muted);line-height:1.55}.days{display:inline-block!important;margin-top:9px;padding:5px 8px;border-radius:99px;background:#edf2ef;color:#58716b!important;font-size:11px!important;font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:var(--paper);border:1px solid var(--line);border-radius:21px;padding:23px;box-shadow:var(--shadow2);display:flex;flex-direction:column;min-height:255px}.cardicon{width:54px;height:54px;border-radius:16px;background:#ece8e1;display:grid;place-items:center;font-size:25px;margin-bottom:14px}.card h3{margin:0 0 8px}.meta{font-size:12px;color:var(--orange);font-weight:800;margin-bottom:11px}.card p{margin:0 0 16px;color:var(--muted);line-height:1.8;flex:1}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.step{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px}.stepno{width:31px;height:31px;border-radius:10px;background:#e4efed;color:var(--teal2);display:grid;place-items:center;font-weight:800;margin-bottom:11px}.step strong{display:block}.step small{display:block;margin-top:7px;color:var(--orange);font-weight:800}.step p{font-size:13px;line-height:1.7;color:var(--muted);margin:7px 0 0}
+.national{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.national-card{background:linear-gradient(160deg,#fbfaf7,#f5f2ec);border:1px solid var(--line);border-radius:20px;padding:20px}.national-card .date{color:var(--orange);font-weight:800;font-size:13px}.national-card h3{margin:9px 0 7px}.national-card p{margin:0;color:var(--muted);line-height:1.7;font-size:14px}
+.prep{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.prepbox{background:var(--paper);border:1px solid var(--line);border-radius:21px;padding:22px;box-shadow:var(--shadow2)}.prepbox h3{margin-top:0}.prepitem{display:flex;gap:10px;align-items:flex-start;background:#f6f3ed;border-radius:13px;padding:11px;margin:9px 0}.dot{width:9px;height:9px;border-radius:99px;background:var(--teal);margin-top:6px;flex:none}.prepitem strong{display:block;font-size:14px}.prepitem small{color:var(--muted);line-height:1.55}
+.bot-shell{display:grid;grid-template-columns:.72fr 1.28fr;gap:18px;background:var(--paper);border:1px solid var(--line);border-radius:25px;padding:18px;box-shadow:var(--shadow)}.source{padding:14px;border-radius:15px;background:#f5f2ec;border:1px solid var(--line);margin-bottom:9px}.source b{display:block}.source small{color:var(--muted)}.examples{margin-top:15px}.examples button{display:block;width:100%;text-align:right;border:1px solid var(--line);background:white;border-radius:12px;padding:10px 11px;margin:6px 0;font-family:inherit;color:#59554e;cursor:pointer}.chat{height:590px;border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;background:#f8f6f2}.chat-head{padding:14px 16px;background:#eee9e2;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.bot-id{display:flex;gap:10px;align-items:center}.bot-icon{width:40px;height:40px;border-radius:13px;background:#d7c8b4;display:grid;place-items:center}.bot-id strong{display:block}.bot-id small{color:var(--muted)}.status{font-size:11px;padding:5px 9px;border-radius:99px;background:#e8efed;color:#51736d}.messages{flex:1;overflow:auto;padding:16px}.msg{max-width:88%;padding:12px 14px;border-radius:17px;margin-bottom:11px;line-height:1.8;font-size:15px}.msg.bot{margin-left:auto;background:#eee9e2;border:1px solid #ded6cb}.msg.user{margin-right:auto;background:#d8c8b2;border:1px solid #c8b398}.answer-title{font-weight:800;margin-bottom:6px}.source-line{margin-top:10px;padding-top:8px;border-top:1px dashed #d0c7bb;font-size:12px;color:#7d756b}.input-area{padding:12px;background:var(--paper);border-top:1px solid var(--line)}.input-row{display:flex;gap:8px}.input-row input{flex:1;padding:12px 13px;border-radius:13px;border:1px solid #d9d2c9;font-family:inherit;outline:none}.send{width:50px;border:0;border-radius:13px;background:var(--teal);color:#fff;cursor:pointer;font-size:18px}.rule{font-size:11px;color:#8d867d;margin-top:7px}.notice{margin-top:18px;padding:16px 18px;border-radius:17px;background:#edf0eb;border:1px solid #d7ded5;color:#5c655b;line-height:1.8}footer{text-align:center;color:#8a847c;padding:38px 0 52px;font-size:14px}
+@media(max-width:980px){.quick-grid{grid-template-columns:repeat(2,1fr)}.hero-grid,.bot-shell,.prep{grid-template-columns:1fr}.timeline{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){nav{display:none}.cards,.national{grid-template-columns:1fr}.countdown{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head p{margin-top:8px}.hero{padding-top:42px}}@media(max-width:520px){.quick-grid,.timeline{grid-template-columns:1fr}}
+
+.cyber-countdown-wrap{
+  margin:14px 0 16px;
+  padding:13px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#f6f3ed;
+}
+.cyber-countdown-title{
+  font-size:13px;
+  font-weight:800;
+  color:var(--teal2);
+  margin-bottom:9px;
+}
+.cyber-countdown{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:7px;
+}
+.cyber-time{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:9px 4px;
+  text-align:center;
+}
+.cyber-num{
+  display:block;
+  font-size:18px;
+  font-weight:800;
+  line-height:1.2;
+}
+.cyber-lab{
+  display:block;
+  margin-top:3px;
+  font-size:10px;
+  color:var(--muted);
+}
+@media(max-width:420px){
+  .cyber-countdown{grid-template-columns:repeat(2,1fr)}
+}
+
+
+.competition-countdown-wrap{
+  margin:14px 0 16px;
+  padding:13px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#f6f3ed;
+}
+.competition-countdown-title{
+  font-size:13px;
+  font-weight:800;
+  color:var(--teal2);
+  margin-bottom:9px;
+}
+.competition-countdown{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:7px;
+}
+.competition-time{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:9px 4px;
+  text-align:center;
+}
+.competition-num{
+  display:block;
+  font-size:18px;
+  font-weight:800;
+  line-height:1.2;
+}
+.competition-lab{
+  display:block;
+  margin-top:3px;
+  font-size:10px;
+  color:var(--muted);
+}
+@media(max-width:420px){
+  .competition-countdown{grid-template-columns:repeat(2,1fr)}
+}
+
+
+.murshid-link{
+  color:#167c78;
+  text-decoration:underline;
+  font-weight:700;
+  overflow-wrap:anywhere;
+  word-break:break-all;
+  direction:ltr;
+  unicode-bidi:isolate;
+  display:inline-block;
+}
+.answer-body{
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+</style></head>
+<body>
+<header><div class="container nav"><div class="brand"><div class="mark">✦</div>دائرة الابتكار العلمي والذكاء الاصطناعي</div><nav><a href="#home">الرئيسية</a><a href="#competitions">المسابقات</a><a href="#bot">مرشد المسابقات</a></nav></div></header>
+<main>
+<section class="hero" id="home"><div class="container"><div><span class="badge">تعليمية ظفار • العام الدراسي 2026–2027</span><h1>بوابة <span>المسابقات والابتكار</span><br>في مكان واحد</h1><p>واجهة موحدة مستوحاة من أجندة أعمال الدائرة، تجمع أهم المواعيد، مسارات التسجيل، المحطات الوطنية، وأدلة المسابقات بصورة واضحة وسريعة.</p><div class="actions"><a class="btn primary" href="#competitions">استعرض المسابقات</a><a class="btn soft" href="#bot">اسأل مرشد المسابقات 🤖</a></div></div></div></section>
+
+<section class="section" id="competitions"><div class="container"><div class="section-head"><h2>التسجيل والمسابقات</h2></div><div class="cards">
+<article class="card"><div class="cardicon">💡</div><h3>الابتكارات العلمية</h3><div class="meta">11 مايو – 1 أكتوبر 2026</div><p>المجالات: العلوم والرياضيات، علوم الأحياء والبيئة، العلوم الهندسية والطاقة، وتقنية المعلومات.</p><div class="competition-countdown-wrap"><div class="competition-countdown-title">⏳ الوقت المتبقي لإغلاق التسجيل</div><div class="competition-countdown" id="innovationCountdown"><div class="competition-time"><span class="competition-num" data-part="days">--</span><span class="competition-lab">يوم</span></div><div class="competition-time"><span class="competition-num" data-part="hours">--</span><span class="competition-lab">ساعة</span></div><div class="competition-time"><span class="competition-num" data-part="minutes">--</span><span class="competition-lab">دقيقة</span></div><div class="competition-time"><span class="competition-num" data-part="seconds">--</span><span class="competition-lab">ثانية</span></div></div></div><a class="btn primary" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf9wttZauHviCTcd8y8nufwG-tP3S9xHmt7g_ARYKrGead5vA/viewform">التسجيل في الابتكارات</a></article>
+<article class="card"><div class="cardicon">🤖</div><h3>الروبوت والطائرات بلا طيار</h3><div class="meta">11 مايو – 1 أكتوبر 2026</div><p>مسابقات تقنية تنافسية في الروبوت والطائرات بلا طيار ضمن مسارات الأولمبياد الوطني.</p><div class="competition-countdown-wrap"><div class="competition-countdown-title">⏳ الوقت المتبقي لإغلاق التسجيل</div><div class="competition-countdown" id="robotCountdown"><div class="competition-time"><span class="competition-num" data-part="days">--</span><span class="competition-lab">يوم</span></div><div class="competition-time"><span class="competition-num" data-part="hours">--</span><span class="competition-lab">ساعة</span></div><div class="competition-time"><span class="competition-num" data-part="minutes">--</span><span class="competition-lab">دقيقة</span></div><div class="competition-time"><span class="competition-num" data-part="seconds">--</span><span class="competition-lab">ثانية</span></div></div></div><a class="btn primary" target="_blank" href="https://forms.gle/hNwmQBdBGk4umjiS8">التسجيل في المسابقات</a></article>
+<article class="card"><div class="cardicon">🛡️</div><h3>الأمن السيبراني</h3><div class="meta">6 – 19 سبتمبر 2026</div><p>تحديات في التشفير والهندسة العكسية والتحليل الجنائي الرقمي واختبار الاختراق.</p><div class="competition-countdown-wrap"><div class="competition-countdown-title">⏳ الوقت المتبقي لإغلاق التسجيل</div><div class="competition-countdown" id="cyberCountdown"><div class="competition-time"><span class="competition-num" data-part="days">--</span><span class="competition-lab">يوم</span></div><div class="competition-time"><span class="competition-num" data-part="hours">--</span><span class="competition-lab">ساعة</span></div><div class="competition-time"><span class="competition-num" data-part="minutes">--</span><span class="competition-lab">دقيقة</span></div><div class="competition-time"><span class="competition-num" data-part="seconds">--</span><span class="competition-lab">ثانية</span></div></div></div><a class="btn primary" target="_blank" href="https://bit.ly/4qXD2ut">التسجيل في الأمن السيبراني</a></article>
+<article class="card"><div class="cardicon">✨</div><h3>التطبيقات المعززة بالذكاء الاصطناعي</h3><div class="meta">6 – 19 سبتمبر 2026</div><p>مسار تدريبي وتنافسي في Python وتطوير نماذج ذكاء اصطناعي ينتهي بهاكاثون وطني.</p><div class="competition-countdown-wrap"><div class="competition-countdown-title">⏳ الوقت المتبقي لإغلاق التسجيل</div><div class="competition-countdown" id="aiCountdown"><div class="competition-time"><span class="competition-num" data-part="days">--</span><span class="competition-lab">يوم</span></div><div class="competition-time"><span class="competition-num" data-part="hours">--</span><span class="competition-lab">ساعة</span></div><div class="competition-time"><span class="competition-num" data-part="minutes">--</span><span class="competition-lab">دقيقة</span></div><div class="competition-time"><span class="competition-num" data-part="seconds">--</span><span class="competition-lab">ثانية</span></div></div></div><a class="btn primary" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSct-saU2WxfrG_xJI5pdNCkIiRZmKvw0-4Tq77mGRsLHwsAYA/viewform">التسجيل في التطبيقات المعززة بالذكاء الاصطناعي</a></article>
+
+<article class="card"><div class="cardicon">📚</div><h3>أدلة المسابقات</h3><div class="meta">المصدر الرسمي للتفاصيل الفنية</div><p>راجع الأدلة للتأكد من الفئات، مواصفات الأدوات، القوانين وآلية احتساب النقاط.</p><a class="btn soft" target="_blank" href="https://drive.google.com/drive/folders/1ubmOPKx0yjNIGExl9zEGUNv7HMEY1314?usp=sharing">فتح الأدلة</a></article>
+</div></div></section>
+<section class="section"><div class="container"><div class="section-head"><h2>الرحلة التنفيذية للمسابقات الرئيسة</h2><p>مسار مبسط مستوحى من المخططات الزمنية في الخطة الإجرائية.</p></div><div class="timeline"><div class="step"><div class="stepno">1</div><strong>التسجيل الإلكتروني</strong><small>حتى 1 أكتوبر 2026</small><p>فتح باب المشاركة واستكمال بيانات الفرق.</p></div><div class="step"><div class="stepno">2</div><strong>تقييم المديريات</strong><small>18 – 29 أكتوبر 2026</small><p>فرز وتقييم المشاريع والفرق.</p></div><div class="step"><div class="stepno">3</div><strong>إرسال المتأهلين</strong><small>1 – 5 نوفمبر 2026</small><p>رفع بيانات الفرق المتأهلة للمنافسة الوطنية.</p></div><div class="step"><div class="stepno">4</div><strong>الأولمبياد الوطني</strong><small>2 – 3 ديسمبر 2026</small><p>المنافسات النهائية على مستوى السلطنة.</p></div></div></div></section>
+<section class="section"><div class="container"><div class="section-head"><h2>المحطات الوطنية</h2><p>أبرز الفعاليات الوطنية خلال الفصل الأول.</p></div><div class="national"><div class="national-card"><div class="date">2 – 9 نوفمبر 2026</div><h3>مهرجان عُمان للعلوم</h3><p>تظاهرة علمية وطنية لتعزيز الوعي بالعلوم والتقنية والابتكار.</p></div><div class="national-card"><div class="date">5 نوفمبر 2026</div><h3>حفل تكريم المجيدين السنوي</h3><p>الاحتفاء بالطلبة الحاصلين على مراكز متقدمة في المسابقات العلمية.</p></div><div class="national-card"><div class="date">2 – 3 ديسمبر 2026</div><h3>الأولمبياد الوطني</h3><p>المنافسات النهائية في الابتكار العلمي والروبوت والذكاء الاصطناعي.</p></div></div></div></section>
+<section class="section" id="bot"><div class="container"><div class="section-head"><h2>مرشد المسابقات</h2><p>يعتمد على أدلة المسابقات الفنية والخطة الإجرائية للمواعيد والبرامج. </p></div><div class="bot-shell"><aside><div class="source"><b>📚 أدلة المسابقات</b><small>الشروط والفئات والمواصفات الفنية والقوانين</small></div><div class="source"><b>🗓️ الخطة الإجرائية 2026–2027</b><small>المواعيد والبرامج والمحطات ومسارات التنفيذ</small></div><div class="examples"><strong>أسئلة مقترحة</strong><button>متى ينتهي تسجيل الابتكارات العلمية؟</button><button>ما مراحل مسابقة الذكاء الاصطناعي؟</button><button>ما الطائرات المسموح استخدامها؟</button><button>ما أبعاد الروبوت في تحدي التوازن البيئي؟</button></div></aside><section class="chat"><div class="chat-head"><div class="bot-id"><div class="bot-icon">🤖</div><div><strong>مرشد المسابقات</strong><small>إجابات موثقة من الأدلة والخطة</small></div></div><span class="status">● جاهز</span></div><div class="messages" id="messages"><div class="msg bot"><div class="answer-title">مرحبًا 👋</div><div>اسألني عن التسجيل، المواعيد، الفئات، مراحل المنافسات، ومواصفات الروبوت أو الطائرة.</div><div class="source-line">أستخدم فقط المعلومات الموثقة في الأدلة والخطة الإجرائية.</div></div></div><div class="input-area"><div class="input-row"><input id="q" placeholder="مثال: من يمكن أن يكون مشرف الابتكار؟"><button class="send" id="send">➤</button></div><div class="rule">اكتب سؤالك واضغط إرسال، وستظهر الإجابة هنا مباشرة.</div></div></section></div></div></section>
+</main><footer>دائرة الابتكار العلمي والذكاء الاصطناعي • تعليمية ظفار • 2026–2027</footer>
+<script>
+const KB=[{"title": "موعد تسجيل الابتكارات العلمية", "keywords": ["تسجيل الابتكارات", "موعد الابتكارات", "1 أكتوبر", "11 مايو"], "answer": "التسجيل الإلكتروني لمسابقة الابتكارات العلمية من 11 مايو حتى 1 أكتوبر 2026.", "source": "الخطة الإجرائية — صفحة 10"}, {"title": "مراحل مسابقة الابتكارات العلمية", "keywords": ["مراحل الابتكارات", "رحلة الابتكارات", "التقييم المحافظة", "المتأهلين"], "answer": "تمر المسابقة بالتسجيل حتى 1 أكتوبر، ثم التقييم على مستوى المحافظة من 18 إلى 29 أكتوبر، ثم إرسال بيانات المتأهلين من 1 إلى 5 نوفمبر، ثم الأولمبياد الوطني يومي 2 و3 ديسمبر 2026، ثم تهيئة الفرق المختارة للمنافسات الخارجية في فبراير 2027.", "source": "الخطة الإجرائية — صفحة 10"}, {"title": "موعد تسجيل الأمن السيبراني", "keywords": ["الأمن السيبراني", "تسجيل السيبراني", "6 سبتمبر", "19 سبتمبر"], "answer": "التسجيل الإلكتروني لمسابقة الأمن السيبراني من 6 إلى 19 سبتمبر 2026.", "source": "الخطة الإجرائية — صفحة 30"}, {"title": "رحلة التأهل في الأمن السيبراني", "keywords": ["مراحل الأمن السيبراني", "التقييم الأولي", "تشكيل الفرق", "الجولة النهائية"], "answer": "بعد التسجيل من 6 إلى 17 سبتمبر، يأتي التدريب والتقييم الأولي من 20 إلى 30 سبتمبر، ثم تشكيل الفرق من 4 إلى 8 أكتوبر، ثم الجولة التمهيدية والتقييم قبل النهائي من 18 إلى 22 أكتوبر، ثم إعلان الفرق المتأهلة من 1 إلى 5 نوفمبر، والجولة النهائية يومي 2 و3 ديسمبر 2026.", "source": "الخطة الإجرائية — صفحة 30"}, {"title": "موعد تسجيل التطبيقات المعززة بالذكاء الاصطناعي", "keywords": ["الذكاء الاصطناعي", "التطبيقات المعززة", "تسجيل الذكاء", "6 سبتمبر", "19 سبتمبر"], "answer": "التسجيل في مسابقة التطبيقات المعززة بالذكاء الاصطناعي من 6 إلى 19 سبتمبر 2026.", "source": "الخطة الإجرائية — صفحة 31"}, {"title": "مراحل مسابقة التطبيقات المعززة بالذكاء الاصطناعي", "keywords": ["مراحل الذكاء الاصطناعي", "Python", "تطوير النموذج", "الهاكاثون"], "answer": "تشمل الرحلة: التسجيل من 6 إلى 17 سبتمبر، تدريب Python والتصفية الأولى من 20 إلى 24 سبتمبر، تطوير النموذج والتصفية الثانية من 4 إلى 8 أكتوبر، مهارات الابتكار وريادة الأعمال يومي 16 و17 نوفمبر، ثم الهاكاثون الوطني يومي 2 و3 ديسمبر 2026.", "source": "الخطة الإجرائية — صفحة 31"}, {"title": "المحطات الوطنية", "keywords": ["المحطات الوطنية", "مهرجان عمان للعلوم", "حفل التكريم", "الأولمبياد الوطني"], "answer": "تشمل المحطات الوطنية: مهرجان عُمان للعلوم من 2 إلى 9 نوفمبر 2026، حفل تكريم المجيدين السنوي في 5 نوفمبر، والأولمبياد الوطني للابتكارات العلمية والروبوت والذكاء الاصطناعي يومي 2 و3 ديسمبر 2026.", "source": "الخطة الإجرائية — صفحة 3"}, {"title": "الفئة المستهدفة في الابتكارات العلمية", "keywords": ["الفئة المستهدفة ابتكارات", "صفوف الابتكارات"], "answer": "الفئة المستهدفة في مسابقة الابتكارات العلمية هي طلبة الصفوف من الخامس إلى الثاني عشر.", "source": "دليل الابتكارات العلمية — صفحة 9"}, {"title": "تخصص المشرف على الابتكار", "keywords": ["المشرف العلمي", "تخصص المشرف"], "answer": "يجب أن يكون المشرف على الابتكار من معلمي التخصصات العلمية، وتشمل العلوم بجميع فروعها، أو الرياضيات، أو تقنية المعلومات.", "source": "دليل الابتكارات العلمية — صفحة 10"}, {"title": "أنواع الطائرات المسموح بها", "keywords": ["نوع الطائرة", "الطائرات المسموح", "tello", "robomaster"], "answer": "يسمح باستخدام طائرات بلا طيار من نوع DJI Tello أو TT RoboMaster فقط.", "source": "دليل مسابقات الطائرات بلا طيار — صفحة 2"}, {"title": "أبعاد الروبوت في تحدي التوازن البيئي", "keywords": ["أبعاد الروبوت", "ابعاد الروبوت", "25 25", "مقاس الروبوت"], "answer": "الأبعاد المسموح بها للروبوت هي 25 سم × 25 سم، والارتفاع غير محدود، ويسمح له بالتمدد بعد صافرة البداية.", "source": "دليل تحدي التوازن البيئي — صفحة 3"}];
+function startCompetitionCountdown(elementId, deadlineIso){
+  const el = document.getElementById(elementId);
+  if(!el) return;
+
+  const deadline = new Date(deadlineIso).getTime();
+
+  function update(){
+    const d = deadline - Date.now();
+
+    if(d <= 0){
+      el.innerHTML = '<div class="competition-time" style="grid-column:1/-1"><span class="competition-num" style="font-size:15px">انتهت فترة التسجيل</span></div>';
+      return;
+    }
+
+    el.querySelector('[data-part="days"]').textContent = Math.floor(d / 86400000);
+    el.querySelector('[data-part="hours"]').textContent = String(Math.floor(d / 3600000) % 24).padStart(2,'0');
+    el.querySelector('[data-part="minutes"]').textContent = String(Math.floor(d / 60000) % 60).padStart(2,'0');
+    el.querySelector('[data-part="seconds"]').textContent = String(Math.floor(d / 1000) % 60).padStart(2,'0');
+  }
+
+  update();
+  setInterval(update, 1000);
+}
+
+startCompetitionCountdown('innovationCountdown', '2026-10-01T23:59:59+04:00');
+startCompetitionCountdown('robotCountdown', '2026-10-01T23:59:59+04:00');
+startCompetitionCountdown('cyberCountdown', '2026-09-19T23:59:59+04:00');
+startCompetitionCountdown('aiCountdown', '2026-09-19T23:59:59+04:00');
+
+function norm(s){return(s||'').toLowerCase().replace(/[\u064B-\u065F\u0670]/g,'').replace(/[إأآٱ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').replace(/[^\u0600-\u06FFa-z0-9\s]/gi,' ').replace(/\s+/g,' ').trim()}const stop=new Set(['ما','ماذا','هل','كم','كيف','في','من','على','الى','إلى','عن','هو','هي','هذا','هذه','المسابقة','مسابقة','دليل','اريد','أريد','يمكن','يجب','متى']);function toks(s){return norm(s).split(' ').filter(x=>x.length>1&&!stop.has(x))}function score(it,q){const qt=toks(q),hay=norm(it.title+' '+it.keywords.join(' ')+' '+it.answer);let s=0;qt.forEach(t=>{if(hay.includes(t))s+=t.length>=5?4:2});const nq=norm(q);it.keywords.forEach(k=>{const nk=norm(k);if(nq.includes(nk)||nk.includes(nq))s+=10});return s}function best(q){const r=KB.map(x=>({x,s:score(x,q)})).sort((a,b)=>b.s-a.s);return(!r.length||r[0].s<5)?null:r[0].x}
+const messagesEl=document.getElementById('messages');
+const qEl=document.getElementById('q');
+const sendEl=document.getElementById('send');
+
+function addUser(t){
+  const d=document.createElement('div');
+  d.className='msg user';
+  d.textContent=t;
+  messagesEl.appendChild(d);
+  messagesEl.scrollTop=messagesEl.scrollHeight;
+}
+function addBot(it){
+  const d=document.createElement('div');
+  d.className='msg bot';
+  if(!it){
+    d.innerHTML='<div class="answer-title">لم أجد إجابة مؤكدة.</div><div>لم أجد هذه المعلومة في الأدلة أو الخطة الإجرائية. جرّب ذكر اسم المسابقة بوضوح.</div>';
+    messagesEl.appendChild(d);
+    messagesEl.scrollTop=messagesEl.scrollHeight;
+    return;
+  }
+  const title=document.createElement('div');
+  title.className='answer-title';
+  title.textContent=it.title;
+  const body=document.createElement('div');
+  body.className='answer-body';
+  body.textContent=it.answer;
+  const source=document.createElement('div');
+  source.className='source-line';
+  source.textContent='المصدر: '+it.source;
+  d.append(title,body,source);
+  messagesEl.appendChild(d);
+  messagesEl.scrollTop=messagesEl.scrollHeight;
+}
+function ask(){
+  const t=qEl.value.trim();
+  if(!t)return;
+  addUser(t);
+  qEl.value='';
+  addBot(best(t));
+}
+const conversationHistory = [];
+
+function rememberTurn(role, content){
+  conversationHistory.push({ role, content });
+  if(conversationHistory.length > 8){
+    conversationHistory.splice(0, conversationHistory.length - 8);
+  }
+}
+
+async function askWorker(){
+  const question = qEl.value.trim();
+  if(!question) return;
+
+  addUser(question);
+  rememberTurn('user', question);
+  qEl.value = '';
+
+  const loading = document.createElement('div');
+  loading.className = 'msg bot';
+  loading.textContent = 'جارٍ البحث في الأدلة والخطة الإجرائية...';
+  messagesEl.appendChild(loading);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+
+  sendEl.disabled = true;
+
+  try {
+    const response = await fetch('https://dhofar-competitions-guide.hlomoon24.workers.dev/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ question, history: conversationHistory.slice(-8) })
+    });
+
+    const data = await response.json();
+    loading.remove();
+
+    if(!response.ok){
+      console.error(data);
+      addBotText('تعذر الحصول على إجابة من مرشد المسابقات حاليًا. يرجى المحاولة مرة أخرى.');
+      return;
+    }
+
+    const finalAnswer = data.answer || 'لم أجد هذه المعلومة في الأدلة أو الخطة الإجرائية المرفقة.';
+    addBotText(finalAnswer);
+    rememberTurn('assistant', finalAnswer);
+  } catch(err) {
+    loading.remove();
+    console.error(err);
+    addBotText('تعذر الاتصال بمرشد المسابقات. تأكد من الاتصال بالإنترنت ثم حاول مرة أخرى.');
+  } finally {
+    sendEl.disabled = false;
+    qEl.focus();
+  }
+}
+
+function addBotText(text){
+  const d = document.createElement('div');
+  d.className = 'msg bot';
+
+  const body = document.createElement('div');
+  body.className = 'answer-body';
+
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  let lastIndex = 0;
+  let match;
+
+  while ((match = urlRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      body.appendChild(
+        document.createTextNode(text.slice(lastIndex, match.index))
+      );
+    }
+
+    let url = match[0];
+    const trailing = url.match(/[.,،؛;!?؟)\]]+$/);
+
+    if (trailing) {
+      url = url.slice(0, -trailing[0].length);
+    }
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.textContent = url;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.className = 'murshid-link';
+    a.dir = 'ltr';
+
+    body.appendChild(a);
+
+    if (trailing) {
+      body.appendChild(document.createTextNode(trailing[0]));
+    }
+
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    body.appendChild(
+      document.createTextNode(text.slice(lastIndex))
+    );
+  }
+
+  d.appendChild(body);
+  messagesEl.appendChild(d);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+sendEl.addEventListener('click', askWorker);
+qEl.addEventListener('keydown', e => {
+  if(e.key === 'Enter'){
+    e.preventDefault();
+    askWorker();
+  }
+});
+document.querySelectorAll('.examples button').forEach(b => {
+  b.addEventListener('click', () => {
+    qEl.value = b.textContent;
+    askWorker();
+  });
+});
+</script></body></html>
